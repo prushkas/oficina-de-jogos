@@ -17,9 +17,9 @@ public class Barbarian : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            attacking = true;
+            attacking = true;   
             
-            if()
+            
         }
     }
 }
