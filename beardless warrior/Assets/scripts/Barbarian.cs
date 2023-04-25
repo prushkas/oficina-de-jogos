@@ -5,7 +5,6 @@ using UnityEngine;
 public class Barbarian : MonoBehaviour
 {
     [SerializeField]float speed;
-    private bool attacking;
     void Start()
     {
         
@@ -13,12 +12,6 @@ public class Barbarian : MonoBehaviour
     void Update()
     {
         Andar();
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            attacking = true;   
-            
-            
-        }
     }
 
     public void Andar()
@@ -27,4 +20,5 @@ public class Barbarian : MonoBehaviour
         transform.position = transform.position + movement * speed * Time.deltaTime;
 
     }
+    
 }
